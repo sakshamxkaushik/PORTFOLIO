@@ -1,14 +1,12 @@
-class CanvasPaint{
-    constructor(data){
-        this.name = "Saksham";
-        this.age = 20;
-        this.data = data;
+class PrintBubbles{
+constructor(parent, number){
+    this.parent = parent;
+    this.number = number;
 }
+ addBubble(){
+for(var i = 1; i<= this.number; i++){
+    bubbles.classList.add("bubble");
+    bubbles.innerHTML = i;
 
-printDetails(){
-    console.log(this.age, this.name, this.data);
-}
-}
-
-let canvas = new CanvasPaint(12);
-canvas.printDetails();
+let bubbles = new PrintBubbles(".app", 12 );
+bubbles.addBubble();

@@ -1,12 +1,12 @@
 class CanvasPaint{
-    constructor(){
+    constructor(data){
         this.name = "Saksham";
         this.age = 20;
         this.data = data;
 }
 
 printDetails(){
-    console.log(this.age, this.name);
+    console.log(this.age, this.name, this.data);
 }
 }
 
